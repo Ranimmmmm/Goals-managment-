@@ -6,7 +6,7 @@ type CourseGoalsListProps = {
   goals: ObjGoal[];
   onDeleteGoal:(id:number) => void
   }
-export default function CourseGoalsList ({goals , onDeleteGoal}: CourseGoalsListProp){
+export default function CourseGoalsList ({goals , onDeleteGoal}: CourseGoalsListProps){
   if(goals.length ===0 ){
     return (
       <InfoBox mode ="Hint">
